@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+
+<body>
+  <main class="container">
+    <section class="container__user">
+      <article class="user__information">
+        <figure class="user__information--picture">
+          <img src="img/image-jeremy.png" alt="Jeremy's photo" class="user__information--img">
+        </figure>
+        <div class="user__information-desc">
+          <p class="user__information--paragraph">Report for</p>
+          <h1 class="user__information--heading">Jeremy Robson</h1>
+        </div>
+      </article>
+      <nav class="user__menu">
+        <a href="#" class="user__link" id="daily">Daily</a>
+        <a href="#" class="user__link active" id="weekly">Weekly</a>
+        <a href="#" class="user__link" id="monthly">Monthly</a>
+      </nav>
+    </section>
+    <section class="container__work"> 
+      <div class="work__container">          
+        <div class="work__container--header">
+          <h3 class="work__container--middleheading">Work</h3>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+              fill="#BBC0FF" fill-rule="evenodd" class="work__container--menuimg" />
+          </svg>
+        </div>
+        <div class="work__container--body">
+          <h2 class="work__container--body--secondheading hour">5hrs</h2>
+          <h4 class="work__container--body--smallheading">Last Day - <span class="perHour">7hrs</span></h4>
+        </div>
+      </div>
+    </section>
+    <section class="container__play">
+      <div class="play__container">
+        <div class="play__container--header">
+          <h3 class="play__container--middleheading">Play</h3>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+              fill="#BBC0FF" fill-rule="evenodd" class="work__container--menuimg" />
+        </div>
+        <div class="play__container--body">
+          <h2 class="play__container--body--secondheading hour">1hrs</h2>
+          <h4 class="play__container--body--smallheading">Last Day - <span class="perHour">2hrs</span></h4>
+        </div>
+      </div>
+    </section>
+    <section class="container__study">
+      <div class="study__container">
+        <div class="study__container--header">
+          <h3 class="study__container--middleheading">Study</h3>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+              fill="#BBC0FF" fill-rule="evenodd" class="work__container--menuimg" />
+        </div>
+        <div class="study__container--body">
+          <h2 class="study__container--body--secondheading hour">0hrs</h2>
+          <h4 class="study__container--body--smallheading">Last Day - <span class="perHour">1hrs</span></h4>
+        </div>
+      </div>
+    </section>
+    <section class="container__exercise">
+      <div class="exercise__container">
+        <div class="exercise__container--header">
+          <h3 class="exercise__container--middleheading">Exercise</h3>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+              fill="#BBC0FF" fill-rule="evenodd" class="work__container--menuimg" />
+        </div>
+        <div class="exercise__container--body">
+          <h2 class="exercise__container--body--secondheading hour">1hrs</h2>
+          <h4 class="exercise__container--body--smallheading">Last Day - <span class="perHour">1hrs</span></h4>
+        </div>
+      </div>
+    </section>
+    <section class="container__social">
+      <div class="social__container">
+        <div class="social__container--header">
+          <h3 class="social__container--middleheading">Social</h3>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+              fill="#BBC0FF" fill-rule="evenodd" class="work__container--menuimg" />
+        </div>
+        <div class="social__container--body">
+          <h2 class="social__container--body--secondheading hour">1hrs</h2>
+          <h4 class="social__container--body--smallheading">Last Day - <span class="perHour">3hrs</span></h4>
+        </div>
+      </div>
+    </section>
+    <section class="container__selfCare">
+      <div class="selfCare__container">
+        <div class="selfCare__container--header">
+          <h3 class="selfCare__container--middleheading">Self Care</h3>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+              fill="#BBC0FF" fill-rule="evenodd" class="work__container--menuimg" />
+        </div>
+        <div class="selfCare__container--body">
+          <h2 class="selfCare__container--body--secondheading hour">0hrs</h2>
+          <h4 class="selfCare__container--body--smallheading">Last Day - <span class="perHour">1hrs</span></h4>
+        </div>
+      </div>
+    </section>
+    <div class="container__attribution">
+      <p class="attribution__paragraph">
+        Challenge by <a  class="attribution__link" target="_blank" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a class="attribution__link" target="_blank" href="https://luis08201.github.io/portafolio/">Luis Selva</a>.
+      </p>
+    </div>
+  </main>
+<script src="js/index.js"></script>
+
+
+
+
+
+
+ <!--  Work
+  5hrs -->
+  <!-- daily -->
+  <!-- Previous - 7hrs -->
+  <!-- daily -->
+<!--   32hrs -->
+  <!-- weekly -->
+ <!--  Previous - 36hrs -->
+  <!-- weekly -->
+<!--   103hrs -->
+  <!-- monthly -->
+<!--   Previous - 128hrs -->
+  <!-- monthly -->
+
+ <!--  Play
+  1hr -->
+  <!-- daily -->
+<!--   Previous - 2hrs -->
+  <!-- daily -->
+<!--   10hrs -->
+  <!-- weekly -->
+<!--   Previous - 8hrs
+ -->  <!-- weekly -->
+  <!-- 23hrs -->
+  <!-- monthly -->
+<!--   Previous - 29hrs
+ -->  <!-- monthly -->
+
+ <!--  Study
+  0hrs -->
+  <!-- daily -->
+<!--   Previous - 1hr -->
+  <!-- daily -->
+  <!-- 4hrs -->
+  <!-- weekly -->
+<!--   Previous - 7hrs -->
+  <!-- weekly -->
+  <!-- 13hrs -->
+  <!-- monthly -->
+<!--   Previous - 19hrs -->
+  <!-- monthly -->
+
+ <!--  Exercise
+  1hr -->
+  <!-- daily -->
+  <!-- Previous - 1hr -->
+  <!-- daily -->
+  <!-- 4hrs -->
+  <!-- weekly -->
+<!--   Previous - 5hrs
+ -->  <!-- weekly -->
+  <!-- 11hrs -->
+  <!-- monthly -->
+<!--   Previous - 18hrs -->
+  <!-- monthly -->
+
+<!--   Social
+  1hr -->
+  <!-- daily -->
+ <!--  Previous - 3hrs -->
+  <!-- daily -->
+  <!-- 5hrs -->
+  <!-- weekly -->
+ <!--  Previous - 10hrs -->
+  <!-- weekly -->
+ <!--  21hrs -->
+  <!-- monthly -->
+ <!--  Previous - 23hrs -->
+  <!-- monthly -->
+
+ <!--  Self Care
+  0hrs -->
+  <!-- daily -->
+  <!-- Previous - 1hr -->
+  <!-- daily -->
+  <!-- 2hrs -->
+  <!-- weekly -->
+  <!-- Previous - 2hrs -->
+  <!-- weekly -->
+  <!-- 7hrs -->
+  <!-- monthly -->
+  <!-- Previous - 11hrs -->
+  <!-- monthly -->
+
+
+  <!--    -->
+</body>
+
+</html>
